@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="etch-style.css">
   </head>
   <body>
-    <div class="header"></div>
-    <div id="container"></div>
-    <div id="slider">
-        <input type="range" min="16" max="100" class="slider" id="myRange" value="1">
-        <div id="slideValue"></div>
+    <div id="flexcontainer">
+      <div id="adjustments">
+        <div id="adjust-contents">
+          <div id="slider">
+              <input type="range" min="16" max="100" class="slider" id="myRange" value="1">
+              <div id="slideValue"></div>
+          </div>
+          <div id="color">
+              <input type="color" id="pickColor" name="color" value="#000">
+              <label for="pickColor">Choose a color</label>
+          </div>
+          <button id="clear">shake</button>
+          <button id="export">Export</button>
+        </div>
     </div>
-    <div id="color">
-        <input type="color" id="pickColor" name="color" value="#000000">
-        <label for="pickColor">Choose a color</label>
+      <div id="container"></div>
     </div>
-    <button id="clear" class="clearButt">shake</button>
-	<script src="etch-script.js"></script>
+	  <script src="etch-script.js"></script>
   </body>
 </html>

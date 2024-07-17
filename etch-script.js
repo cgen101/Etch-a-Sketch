@@ -15,8 +15,6 @@ slider.oninput = function() {
     sliderVal.textContent = `${slider.value} x ${slider.value}`; 
 };
 
-
-
 //Helper fxn to generate grid
 function createGrid(x) { 
     grid.innerHTML='';
@@ -25,13 +23,22 @@ function createGrid(x) {
         newDiv.className = "gridDiv";
         newDiv.style.width = `calc(100% / ${x})`;
         newDiv.style.height = `calc(100% / ${x})`;
-        newDiv.addEventListener("mouseover", function() { 
-            newDiv.style.backgroundColor = "black"; 
-        }); 
         grid.appendChild(newDiv); 
+    }
+    
+    listenForHover();
+}
+
+//Helper fxn to add listener to each div
+function listenForHover() { 
+    for (let i=0; i<gridElems.length; i++) { 
+        gridElems[i].addEventListener("mouseover", function() { 
+            gridElems[i].style.backgroundColor = chooseColor.value;
+        })
     }
 }
 
+//Fxn to clear grid
 clearButton.addEventListener("click", function() { 
     for (let i = 0; i < gridElems.length; i++) {
         gridElems[i].style.backgroundColor = "white"; 
