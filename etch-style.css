@@ -1,5 +1,4 @@
 
-
 #adjustments {
   height: 100%;
   width: 0;
@@ -42,9 +41,23 @@
   #adjustments div {font-size: 18px;}
 }
 
-#adjustIcon:hover { 
-  width: 125px; 
-  height: 125px;
+#organize { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#actionicons { 
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 500px;
+  margin-top: 10px;
+}
+
+
+#actionicons img:hover { 
   cursor: pointer;
 }
 
@@ -70,15 +83,15 @@
   justify-content: center;
   align-items: center;
   border: solid; 
-  height: 550px; 
-  width: 550px;
+  height: 500px; 
+  width: 500px;
 }
 
 #container {
   display: flex;
   flex-wrap: wrap;
-  width: 500px; 
-  height: 500px;
+  width: 450px; 
+  height: 450px;
   align-items: center;
   margin: 0px 20px 0px 20px;
 }

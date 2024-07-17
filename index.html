@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="etch-style.css">
   </head>
   <body>
-      <h1>itch n scratch</h1>
       <div id="organize">
         <div id="adjustments">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -21,18 +20,17 @@
               <label for="pickColor">Choose a color</label><br>
               <input type="color" id="pickColor" name="color" value="#000">
           </div>
-          <div id="clearButt">
-          <button id="clear">shake</button>
-          </div>
-          <div id="expButt">
-          <button id="export">Export</button>
-          </div>
         </div>
+
         <div id="containerBox">
           <div id="container"></div>
         </div>
+        <div id="actionicons">
+          <img src="images/paint.png" alt="paint icon" id="adjustIcon" onclick="openNav()" height="80px" width="80px">
+          <img src="images/erase.png" alt="x icon" id="delIcon" height="70px" width="70px">
+          <img src="images/camera.png" alt="save icon" id="saveIcon" height="80px" width="80px">
+        </div>
       </div>
-      <img src="paint.png" alt="paint icon" id="adjustIcon" onclick="openNav()" height="100px" width="100px">
 	  <script src="etch-script.js"></script>
   </body>
 </html>
