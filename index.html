@@ -8,23 +8,31 @@
     <link rel="stylesheet" href="etch-style.css">
   </head>
   <body>
-    <div id="flexcontainer">
-      <div id="adjustments">
-        <div id="adjust-contents">
+      <h1>itch n scratch</h1>
+      <div id="organize">
+        <div id="adjustments">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div id="slider">
-              <input type="range" min="16" max="100" class="slider" id="myRange" value="1">
-              <div id="slideValue"></div>
+            <label for="myRange">Adjust pixel count</label><br>
+            <input type="range" min="16" max="100" class="adjust" id="myRange" value="1">
+            <div id="slideValue" class="adjust"></div>
           </div>
           <div id="color">
+              <label for="pickColor">Choose a color</label><br>
               <input type="color" id="pickColor" name="color" value="#000">
-              <label for="pickColor">Choose a color</label>
           </div>
+          <div id="clearButt">
           <button id="clear">shake</button>
+          </div>
+          <div id="expButt">
           <button id="export">Export</button>
+          </div>
         </div>
-    </div>
-      <div id="container"></div>
-    </div>
+        <div id="containerBox">
+          <div id="container"></div>
+        </div>
+      </div>
+      <img src="paint.png" alt="paint icon" id="adjustIcon" onclick="openNav()" height="100px" width="100px">
 	  <script src="etch-script.js"></script>
   </body>
 </html>

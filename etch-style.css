@@ -1,16 +1,86 @@
 
-#flexcontainer { 
+
+#adjustments {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
   display: flex; 
-  flex-direction: row; 
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#adjustments div {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+#adjustments button { 
+  width: 180px; 
+  padding: 20px;
+}
+
+#adjustments .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  #adjustments {padding-top: 15px;}
+  #adjustments div {font-size: 18px;}
+}
+
+#adjustIcon:hover { 
+  width: 125px; 
+  height: 125px;
+  cursor: pointer;
+}
+
+#slider { 
+  display: flex; 
+  flex-direction: column;
+  background-color: aliceblue;
+  margin: 10px;
+}
+#myRange { 
+  width: 180px;
+}
+
+#pickColor { 
+  width: 180px;
+}
+#pickColor:hover { 
+  cursor:pointer;
+}
+
+#containerBox { 
+  display: flex;
   justify-content: center;
+  align-items: center;
+  border: solid; 
+  height: 550px; 
+  width: 550px;
 }
 
 #container {
   display: flex;
   flex-wrap: wrap;
-  width: 600px; 
-  height: 600px;
-  margin-left: 25px;
+  width: 500px; 
+  height: 500px;
+  align-items: center;
+  margin: 0px 20px 0px 20px;
 }
 
 .gridDiv { 
@@ -18,8 +88,3 @@
   box-sizing: border-box;
 }
 
-#adjustments { 
-  display: flex; 
-  flex-direction: column;
-  justify-content: space-around;
-}

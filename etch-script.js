@@ -3,6 +3,7 @@ const slider = document.getElementById("myRange");
 const sliderVal = document.getElementById("slideValue");
 const clearButton = document.getElementById("clear");
 const chooseColor = document.getElementById("pickColor");
+const sideNav = document.getElementById("adjustments");
 let gridElems = document.getElementsByClassName("gridDiv");
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -44,6 +45,14 @@ clearButton.addEventListener("click", function() {
         gridElems[i].style.backgroundColor = "white"; 
     }
 })
+
+function openNav() { 
+    sideNav.style.width="250px"; 
+}
+function closeNav() { 
+    sideNav.style.width="0px"; 
+}
+
 
 
 
