@@ -20,7 +20,7 @@
       <div id="organize">
 
         <div id="adjustments">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="closebtn" onclick="closeNav()"><p>x</p></div>
           <div id="slider">
             <label for="myRange">adjust pixel count</label><br>
             <input type="range" min="16" max="100" class="adjust" id="myRange" value="1">
@@ -37,13 +37,13 @@
         <div id="containerBox">
           <div id="container"></div>
           <div id="actionicons">
-            <div>
+            <div class="rightandleft">
             <img src="images/paint.png" alt="paint icon" id="adjustIcon" onclick="openNav()" height="50px" width="50px">
             </div>
-            <div>
+            <div class="middle">
             <img src="images/delete.png" alt="x icon" id="delIcon" height="50px" width="50px">
             </div>
-            <div>
+            <div class="rightandleft">
             <img src="images/camera.png" alt="save icon" id="saveIcon" height="50px" width="50px">
             </div>
           </div>
