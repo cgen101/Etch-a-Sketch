@@ -6,31 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Etch-a-sketch</title>
     <link rel="stylesheet" href="etch-style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
   </head>
   <body>
+      <div id="etch">
+        <h1>etch</h1>
+      </div>
+
       <div id="organize">
+
         <div id="adjustments">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div id="slider">
-            <label for="myRange">Adjust pixel count</label><br>
+            <label for="myRange">adjust pixel count</label><br>
             <input type="range" min="16" max="100" class="adjust" id="myRange" value="1">
             <div id="slideValue" class="adjust"></div>
           </div>
           <div id="color">
-              <label for="pickColor">Choose a color</label><br>
+              <label for="pickColor">choose a color</label><br>
               <input type="color" id="pickColor" name="color" value="#000">
           </div>
+          <div id="randomColor"><button id="randColorButt">disco mode</button></div>
+          <div id="boring"><button id="boringButt">boring mode</button></div>
         </div>
 
         <div id="containerBox">
           <div id="container"></div>
+          <div id="actionicons">
+            <div>
+            <img src="images/paint.png" alt="paint icon" id="adjustIcon" onclick="openNav()" height="50px" width="50px">
+            </div>
+            <div>
+            <img src="images/delete.png" alt="x icon" id="delIcon" height="50px" width="50px">
+            </div>
+            <div>
+            <img src="images/camera.png" alt="save icon" id="saveIcon" height="50px" width="50px">
+            </div>
+          </div>
         </div>
-        <div id="actionicons">
-          <img src="images/paint.png" alt="paint icon" id="adjustIcon" onclick="openNav()" height="80px" width="80px">
-          <img src="images/erase.png" alt="x icon" id="delIcon" height="70px" width="70px">
-          <img src="images/camera.png" alt="save icon" id="saveIcon" height="80px" width="80px">
-        </div>
+
+
+      </div>
+      <div id="sketch">
+        <h1>sketch</h1>
       </div>
 	  <script src="etch-script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   </body>
 </html>
