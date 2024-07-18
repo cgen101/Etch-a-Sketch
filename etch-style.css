@@ -12,6 +12,8 @@ body h1 {
   letter-spacing: 20px;
 }
 
+
+
 #adjustments {
   height: 100%;
   width: 0;
@@ -92,7 +94,7 @@ body h1 {
 
 #randColorButt:hover { 
   background: linear-gradient(-45deg, red , orange, yellow, green, blue, purple);
-  animation: gradient 15s ease infinite;
+  animation: gradient 10s ease infinite;
   background-size: 400% 400%;
 }
 @keyframes gradient {
@@ -154,7 +156,6 @@ body h1 {
   transform: scale(1.1) rotate(4deg);
 }
 
-/* Buzz */
 @-webkit-keyframes hvr-buzz {
   50% {
     -webkit-transform: translateX(3px) rotate(2deg);
