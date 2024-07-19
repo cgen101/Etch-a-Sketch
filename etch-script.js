@@ -7,6 +7,7 @@ const chooseColor = document.getElementById("pickColor");
 const sideNav = document.getElementById("adjustments");
 const randomColor = document.getElementById("randColorButt");
 const backToBlack = document.getElementById("boringButt");
+const credit = document.getElementById("tooltip");
 let gridElems = document.getElementsByClassName("gridDiv");
 
 //Load initial 16x16 grid
@@ -81,7 +82,7 @@ function getRandomColor() {
     return color;
 }
 
-//Save sketch as .png
+//Listen for click to save sketch as .png
 expButton.addEventListener('click', function() {
     html2canvas(document.getElementById('container')).then(canvas => {
         let link = document.createElement('a');
@@ -91,6 +92,7 @@ expButton.addEventListener('click', function() {
     });
 });
 
+//Animate heading
 jQuery(document).ready(function(){
     $('h1').mousemove(function(e){
       var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
@@ -105,7 +107,13 @@ function openNav() {
 function closeNav() { 
     sideNav.style.width="0px"; 
 }
-
+function showPop() { 
+    credit.textContent="built by cgen101, 2024";
+    credit.style.display="block";
+}
+function closePop() { 
+    credit.style.display="none";
+}
 
 
 

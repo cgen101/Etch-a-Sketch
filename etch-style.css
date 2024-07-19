@@ -12,8 +12,6 @@ body h1 {
   letter-spacing: 20px;
 }
 
-
-
 #adjustments {
   height: 100%;
   width: 0;
@@ -220,6 +218,38 @@ body h1 {
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=125360), auto !important;
   background-color: #eeeeee;
 }
+
+#etch { 
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
+#etch img { 
+  height: 40px; 
+  width: 40px; 
+  padding-top:10px;
+}
+#tooltip { 
+  display: none; 
+  position:fixed;
+  padding: 15px;
+  margin-top:55px;
+  margin-right: 170px;
+  font-family: "Pixelify Sans", sans-serif;
+  background-color: #000000;
+  color:#feffdf;
+  border-radius: 5px;
+  border-bottom-right-radius: 70px;
+  
+}
+#credit { 
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  width: 70px;
+}
+
 
 
 
