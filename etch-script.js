@@ -28,7 +28,7 @@ chooseColor.oninput = function() {
 };
 
 backToBlack.addEventListener("click", function() { 
-    listenForHover("#000");
+    listenForHover("#000000000");
 })
 
 

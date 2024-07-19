@@ -215,7 +215,7 @@ body h1 {
 .gridDiv { 
   border: 1px solid black;
   box-sizing: border-box;
-  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=125360), auto !important;
+  cursor:pointer;
   background-color: #eeeeee;
 }
 
