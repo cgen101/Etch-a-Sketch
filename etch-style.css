@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #cbf078;
+  background-color: #CEDF9F;
 }
 body h1 { 
   font-size: 40px;
